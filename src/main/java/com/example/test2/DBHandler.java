@@ -12,9 +12,9 @@ import static java.lang.Class.*;
 
 public class DBHandler {
     private final String HOST = "127.0.0.1";
-    private final String PORT = "3306";
-    private final String DB_NAME = "dbsych";
-    private final String LOGIN = "root";
+    private final String PORT = "13306";
+    private final String DB_NAME = "javafxTest";
+    private final String LOGIN = "Sych";
     private final String PASS = "root";
     private Connection dbConn = null;
     //"?serverTimezone=Europe/Moscow?characterEncoding=UTF8&useLegacyDatetimeCode=false"
