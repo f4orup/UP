@@ -13,7 +13,7 @@ services:
       MYSQL_USER: Sych
       MYSQL_PASSWORD: root
     volumes:
-      - C:/Users/Vladislav/IdeaProjects/UP/database/mariadb:/var/lib/mysql
-      - C:/Users/Vladislav/IdeaProjects/UP/database/init.sql:/data/application/init.sql
+      - C:/Users/Vladislav/IdeaProjects/test2/database/mariadb:/var/lib/mysql
+      - C:/Users/Vladislav/IdeaProjects/test2/database/init.sql:/data/application/init.sql
 
     # network_mode: "host"
