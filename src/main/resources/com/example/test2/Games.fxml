@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.GamesController">
+   <children>
+      <ImageView fitHeight="710.0" fitWidth="1100.0">
+         <image>
+            <Image url="@../../../files/fon.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="7.0" layoutY="10.0" prefHeight="700.0" prefWidth="257.0">
+         <children>
+            <Text fill="#11cfff" layoutX="55.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYCHEV   CLUB" wrappingWidth="147.9601593017578">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="MainBtn" layoutX="55.0" layoutY="158.0" mnemonicParsing="false" onAction="#MenuBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Главная" textFill="WHITE" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="AppBtn" layoutX="55.0" layoutY="236.0" mnemonicParsing="false" onAction="#AppBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Приложения" textFill="WHITE" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogOutBtn" layoutX="55.0" layoutY="629.0" mnemonicParsing="false" onAction="#LogOutBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Выйти" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="55.0" layoutY="331.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Игры" textFill="WHITE" AnchorPane.topAnchor="250.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="170.0">
+               <image>
+                  <Image url="@../../../files/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="252.0">
+               <image>
+                  <Image url="@../../../files/game-controller.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="209.0" layoutY="252.0" rotate="360.0">
+               <image>
+                  <Image url="@../../../files/game-controller.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="209.0" layoutY="170.0" rotate="360.0">
+               <image>
+                  <Image url="@../../../files/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="332.0">
+               <image>
+                  <Image url="@../../../files/application.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="209.0" layoutY="332.0" rotate="180.0">
+               <image>
+                  <Image url="@../../../files/application.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="631.0">
+               <image>
+                  <Image url="@../../../files/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="209.0" layoutY="631.0" rotate="180.0">
+               <image>
+                  <Image url="@../../../files/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ButtonBar layoutX="450.0" layoutY="64.0" prefHeight="40.0" prefWidth="200.0" />
+      <Text fill="#11cfff" layoutX="573.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НАШИ ИГРЫ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="dota" fitHeight="150.0" fitWidth="150.0" layoutX="300.0" layoutY="104.0" AnchorPane.leftAnchor="300.0">
+         <image>
+            <Image url="@../../../files/dota.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="DotaBtn" layoutX="299.0" layoutY="267.2" maxWidth="-Infinity" mnemonicParsing="false" onAction="#DotaBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Dota 2" textFill="#5eecff" AnchorPane.topAnchor="267.0" />
+      <ImageView fx:id="cs2" fitHeight="150.0" fitWidth="150.0" layoutX="498.0" layoutY="104.0" AnchorPane.leftAnchor="700.0">
+         <image>
+            <Image url="@../../../files/cs2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dayz" fitHeight="150.0" fitWidth="150.0" layoutX="685.0" layoutY="104.0" AnchorPane.leftAnchor="500.0">
+         <image>
+            <Image url="@../../../files/dayz.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fortnite" fitHeight="150.0" fitWidth="150.0" layoutX="901.0" layoutY="104.0" AnchorPane.leftAnchor="900.0">
+         <image>
+            <Image url="@../../../files/fortnite.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="minecraft" fitHeight="150.0" fitWidth="180.0" layoutX="483.0" layoutY="308.0" AnchorPane.leftAnchor="483.0">
+         <image>
+            <Image url="@../../../files/minecraft.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="warface" fitHeight="150.0" fitWidth="150.0" layoutX="500.0" layoutY="308.0" AnchorPane.leftAnchor="300.0">
+         <image>
+            <Image url="@../../../files/warface.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wot" fitHeight="150.0" fitWidth="150.0" layoutX="700.0" layoutY="308.0">
+         <image>
+            <Image url="@../../../files/wot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wow" fitHeight="150.0" fitWidth="150.0" layoutX="900.0" layoutY="308.0">
+         <image>
+            <Image url="@../../../files/wow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pubg" fitHeight="150.0" fitWidth="150.0" layoutX="500.0" layoutY="506.0">
+         <image>
+            <Image url="@../../../files/pubg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rust" fitHeight="150.0" fitWidth="150.0" layoutX="700.0" layoutY="506.0">
+         <image>
+            <Image url="@../../../files/rust.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="DayZBtn" layoutX="501.0" layoutY="267.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#DayZBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="DayZ" textFill="#5eecff" />
+      <Button fx:id="CS2Btn" layoutX="701.0" layoutY="267.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#CS2Btn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="CS 2" textFill="#5eecff" />
+      <Button fx:id="FortniteBtn" layoutX="901.0" layoutY="267.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#FortniteBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Fortnite" textFill="#5eecff" />
+      <Button fx:id="WarfaceBtn" layoutX="301.0" layoutY="466.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#WarfaceBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Warface" textFill="#5eecff" />
+      <Button fx:id="MinecraftBtn" layoutX="499.0" layoutY="466.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#MinecraftBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Minecraft" textFill="#5eecff" />
+      <Button fx:id="WOTBtn" layoutX="701.0" layoutY="466.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#WOTBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="WOT" textFill="#5eecff" />
+      <Button fx:id="WOWBtn" layoutX="901.0" layoutY="466.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#WOWBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="WOW" textFill="#5eecff" />
+      <Button fx:id="PubgBtn" layoutX="501.0" layoutY="668.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#PUBGBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="PUBG" textFill="#5eecff" />
+      <Button fx:id="RustBtn" layoutX="701.0" layoutY="668.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#RustBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="RUST" textFill="#5eecff" />
+      <ComboBox fx:id="genresBox" layoutX="900.0" layoutY="523.0" onAction="#addComboBoxListener" prefWidth="150.0" promptText="Выбрать жанр" style="-fx-background-color: #6D6A75; -fx-border-color: #00FF7F;" />
+   </children>
+</AnchorPane>

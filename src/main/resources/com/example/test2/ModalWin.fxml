@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.ModalWinController">
+   <children>
+      <Label layoutX="88.0" layoutY="31.0" prefHeight="24.0" prefWidth="224.0" text="Вы уверены, что хотите выйти?" textFill="#10cfff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="80.0" text="Все оставленные денежные средства пропадут со счета" textFill="#10cfff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="LogOutBtn" layoutX="238.0" layoutY="147.0" mnemonicParsing="false" onAction="#LogOutBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="notLogOut" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" onAction="#notLogOut" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Остаться" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

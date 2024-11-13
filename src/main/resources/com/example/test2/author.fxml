@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.AuthorizationController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1100.0">
+         <image>
+            <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/fon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="CloseBtn" layoutX="1029.0" layoutY="17.0" mnemonicParsing="false" onAction="#CloseBtn" prefHeight="54.0" prefWidth="54.0" style="-fx-background-radius: 100; -fx-background-color: black;" />
+      <ImageView fx:id="" fitHeight="60.0" fitWidth="60.0" layoutX="1026.0" layoutY="14.0">
+         <image>
+            <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/close.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="447.0" layoutY="250.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #212121;" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="210.0">
+         <children>
+            <TextField fx:id="LoginField" layoutX="106.0" layoutY="100.0" prefHeight="26.0" prefWidth="188.0" promptText="Username" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="100.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="151.0" layoutY="21.0" text="Login" textFill="#f8f6f6" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="160.0">
+               <font>
+                  <Font name="Noto Sans ExtraBold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="156.0" layoutY="73.0" prefHeight="4.0" prefWidth="77.0" style="-fx-background-color: #00FF7F;" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="158.0" />
+            <PasswordField fx:id="PasswordField" layoutX="119.0" layoutY="165.0" prefHeight="26.0" prefWidth="188.0" promptText="Password" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="106.0" />
+            <Button fx:id="LoginBtn" layoutX="143.0" layoutY="219.0" mnemonicParsing="false" onAction="#LoginBtn" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 90;" text="Login" textFill="#171717" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="72.0" layoutY="100.0">
+               <image>
+                  <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="72.0" layoutY="166.0">
+               <image>
+                  <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/pass.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="AdminBtn" layoutY="244.0" mnemonicParsing="false" onAction="#AdminBtn" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 90;" text="Are you admin?" textFill="#171717" AnchorPane.leftAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

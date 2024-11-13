@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.ActiveSessionsController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1100.0">
+         <image>
+            <Image url="@../../../files/fon.png" />
+         </image>
+      </ImageView>
+      <Text fill="#11cfff" layoutX="97.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYCHEV   CLUB" wrappingWidth="147.9601593017578">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="BackBtn" layoutX="67.0" layoutY="647.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="38.0" prefWidth="208.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="SessionTable" layoutX="350.0" prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: #212121;">
+        <columns>
+          <TableColumn fx:id="ID" minWidth="62.39996337890625" prefWidth="63.20001220703125" text="ID" />
+          <TableColumn fx:id="DATE" minWidth="77.5999755859375" prefWidth="125.5999755859375" text="ДАТА" />
+            <TableColumn fx:id="TIME" minWidth="105.5999755859375" prefWidth="120.79998779296875" text="ВРЕМЯ" />
+            <TableColumn fx:id="ADMINID" minWidth="105.60003662109375" prefWidth="105.60003662109375" text="ID АДМИНА" />
+            <TableColumn fx:id="USERID" minWidth="108.0" prefWidth="126.39996337890625" text="ID ПОЛЬЗОВАТЕЛЯ" />
+            <TableColumn fx:id="COMPUTERID" minWidth="108.0" prefWidth="0.0" text="ID КОМПЬЮТЕРА" />
+            <TableColumn fx:id="BALANCE" minWidth="108.0" prefWidth="0.0" text="БАЛАНС" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.AdminAuthorController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1100.0">
+         <image>
+            <Image url="@../../../files/fon.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="356.0" layoutY="209.0" prefHeight="282.0" prefWidth="385.0" style="-fx-background-color: #212121;">
+         <children>
+            <TextField fx:id="LoginField" layoutX="106.0" layoutY="100.0" prefHeight="26.0" prefWidth="188.0" promptText="Username" style="-fx-background-color: #82A7A6; -fx-border-color: #00FF7F; -fx-border-radius: 90; -fx-background-radius: 90;" AnchorPane.bottomAnchor="164.0" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="100.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="147.0" layoutY="20.0" prefHeight="54.0" prefWidth="94.0" text="Login" textFill="#f8f6f6" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="146.6">
+               <font>
+                  <Font name="Noto Sans ExtraBold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="152.2" layoutY="73.0" prefHeight="4.0" prefWidth="79.0" style="-fx-background-color: #00FF7F;" AnchorPane.leftAnchor="152.2" AnchorPane.rightAnchor="154.2" />
+            <PasswordField fx:id="PasswordField" layoutX="119.0" layoutY="165.0" prefHeight="26.0" prefWidth="188.0" promptText="Password" style="-fx-background-color: #82A7A6; -fx-border-color: #00FF7F; -fx-border-radius: 90; -fx-background-radius: 90;" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="106.0" />
+            <Button fx:id="LoginBtn" layoutX="136.0" layoutY="217.0" mnemonicParsing="false" onAction="#LoginBtn" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 90;" text="Login" textFill="#171717" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="72.0" layoutY="100.0">
+               <image>
+                  <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="72.0" layoutY="166.0">
+               <image>
+                  <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/pass.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="BackBtn" layoutY="255.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #00FF7F; -fx-background-radius: 90;" text="Are you not admin?" textFill="#171717" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="255.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="CloseBtn" layoutX="1029.0" layoutY="17.0" mnemonicParsing="false" onAction="#CloseBtn" prefHeight="54.0" prefWidth="54.0" style="-fx-background-radius: 100; -fx-background-color: black;" />
+      <ImageView fx:id="" fitHeight="60.0" fitWidth="60.0" layoutX="1026.0" layoutY="14.0">
+         <image>
+            <Image url="@../../../../../../../../../../kolledge/Gutya/kr3/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

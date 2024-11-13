@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test2.ComputersController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1100.0">
+         <image>
+            <Image url="@../../../files/fon.png" />
+         </image>
+      </ImageView>
+      <Text fill="#11cfff" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYCHEV   CLUB" wrappingWidth="147.9601593017578">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#11cfff" layoutX="938.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYCHEV   CLUB" wrappingWidth="147.9601593017578">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="LogOutBtn" layoutX="14.0" layoutY="647.0" mnemonicParsing="false" onAction="#LogOutBtn" prefHeight="27.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: #00FF7F;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text fill="#11cfff" layoutX="422.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация про наши компьютеры">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#11cfff" layoutX="162.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Компьютеры в комнате стандарт">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#11cfff" layoutX="747.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Компьютеры в VIP комнате">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#11cfff" layoutX="93.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем первом компьютере стоит самая мощная в этой комнате видеокарта rtx2060, быстрые 16гб опертивной памяти и процессор ryzen 7 2600" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="93.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем втором по мощности в этой комнате компьютере стоит видеокарта gtx 1650ti, 12гб опертивной памяти и процессор ryzen 5 3600" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="93.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем третьем компьютере стоит видеокарта gtx 1050ti, комфортные 8гб опертивной памяти и процессор intel i5 7600" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="93.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем четвертом компьютере стоит довольно средняя видеокарта gtx 1060, достаточно быстрые 12гб опертивной памяти и процессор intel i5 6600" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="93.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем пятом, к сожалению, самым слабом компьютере в этой комнате стоит видеокарта rx 580,  8гб опертивной памяти и очень популярный процессор ryzen 5 2600" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="651.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наши первые три компьютера примерно одинаковые по мощности" wrappingWidth="381.59912109375" />
+      <Text fill="#11cfff" layoutX="659.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем первом компьютере стоит максимально комфортная видеокарта rx 5700xt, быстрые 16гб опертивной памяти и процессор ryzen 5 5500" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="659.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем втором компьютере стоит максимально комфортная видеокарта rtx 2060ti, быстрые 16гб опертивной памяти и процессор intel core i5 11400f" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="659.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем третьем компьютере стоит самая популярная в своем ценовом сегменте видеокарта rtx 3060, быстрые 16гб опертивной памяти и процессор intel core i5 12400f" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="659.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем втором по мощности компьютере стоит очень качественная видеокарта rx 6700xt, довольно быстрые 24гб опертивной памяти и процессор ryzen 5 5600" wrappingWidth="366.399169921875" />
+      <Text fill="#11cfff" layoutX="659.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В нашем самом мощном компьютере компьютере стоит очень мощная видеокарта rtx 3080ti, очень быстрые 32гб опертивной памяти и процессор intel core i9 9900k" wrappingWidth="366.399169921875" />
+   </children>
+</AnchorPane>
