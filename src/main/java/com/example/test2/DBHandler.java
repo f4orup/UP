@@ -15,7 +15,7 @@ public class DBHandler {
     private final String PORT = "3306";
     private final String DB_NAME = "dbsych";
     private final String LOGIN = "root";
-    private final String PASS = "";
+    private final String PASS = "root";
     private Connection dbConn = null;
     //"?serverTimezone=Europe/Moscow?characterEncoding=UTF8&useLegacyDatetimeCode=false"
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
