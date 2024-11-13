@@ -18,12 +18,12 @@
 - Создать папку, куда будет загружен проект
 - В папке shift + ПКМ -> PowerShell
 - ```git clone https://github.com/f4orup/UP.git```
-- ```cd UP-master/database/```
+- ```cd UP/database/```
 - ```docker compose up```
 2) Java APP
 - Открыть IntelliJ IDEA
 - file -> Open -> Путь до вашей папки, куда сохраняли проект
-- ПКМ по контроллеру в директории libs -> Add as lib
+- ПКМ по контроллеру в директории libs -> Add as Library
 - Прочитать примечание выше
 - Открыть класс HelloAplication -> Скомпилировать проект
 
