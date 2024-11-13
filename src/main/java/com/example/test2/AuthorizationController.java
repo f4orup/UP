@@ -49,34 +49,22 @@ public class AuthorizationController {
         String Password = PasswordField.getText().trim();
         if ((!Login.isEmpty()) || (!Password.isEmpty())) {
                 int id = db.checkUs(Login,Password);
-            System.out.println(id);
                 if (id != -1) {
-                    System.out.println(id);
                     UserInfo.setFIO(db.userFIObyID(id));
-                    System.out.println(UserInfo.getFIO());
                     UserInfo.setRole(0);
                     UserInfo.setUserID(id);
-                    System.out.println(UserInfo.getUserID());
                     FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Main.fxml"));
-                    System.out.println("sahd");
                     Stage firstage = new Stage();
-                    System.out.println("asd");
                     Scene scene2 = new Scene(fxmlLoader.load(), 1100, 700);
-                    System.out.println("zxc");
                     firstage.setTitle("Меню");
-                    System.out.println("zxcv");
                     firstage.setResizable(false);
-                    System.out.println("jashdu");
                     firstage.setScene(scene2);
-                    System.out.println("sahdw");
                     LoginBtn.getScene().getWindow().hide();
-                    System.out.println("jashdui");
                     firstage.show();
-                    System.out.println("asjh");
                 } else {
                     Alert loginError = new Alert(Alert.AlertType.ERROR);
                     loginError.setTitle("ОШИБКА!");
-                    loginError.setHeaderText("Вы не смогли войти в аккаунт");
+                    loginError.setHeaderText("Вы не можете зайти в аккаунт без баланса");
                     loginError.setContentText("Проверьте правильность логина или пароля!");
                     loginError.show();
                     tries++;

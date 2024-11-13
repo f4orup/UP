@@ -190,6 +190,12 @@ public class MainController {
         bal = db.getBalance(userInfo.getUserID());
         if (bal.equals(null)){
             bal = "0";
+        } else {
+            Alert balError = new Alert(Alert.AlertType.ERROR);
+            balError.setTitle("ОШИБКА!");
+            balError.setHeaderText("Вы не можете зайти в аккаунт без сессии");
+            balError.setContentText("Попросите админа создать вам сессию!");
+            balError.show();
         }
         int a = Integer.parseInt(bal);
         setBalance(a);
